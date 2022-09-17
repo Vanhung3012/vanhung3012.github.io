@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+ font-family: Arial, Helvetica, sans-serif;
+}
+ /* 1.Làm từ ngoài vòng trong
+ 2.Làm từ trên xuống dưới
+ 3. Từ tổng quan đến chi tiết */
+
+/* 1 vị trí 
+2 kích thước(width,height)
+3. màu sắc
+4.Kiểu dáng( kiểu chữ, hình tròn, hình vuông,..) */
+#main{
+
+}
+
+
+#header{
+    height: 46.5px;
+    background-color: #000;
+    
+}
+#nav, .subnav{
+   list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+ #nav > li:hover > a, #nav .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+
+#nav .subnav a{
+    color: #333; 
+    padding: 0 12px;
+    line-height: 38.5px;
+}
+
+#slider{
+    /* margin-top: 46.5 px; */
+    /* position: relative; */
+    padding-top: 50%;
+    background: url(/assets/css/img/slider_1.jpg) top center / cover no-repeat;
+    
+}
+
+#slider .text-content{
+     /* position: absolute; */
+    /* width: 100%;
+    bottom: 47px;
+    text-align: center; */
+}
+
+#content{
+
+}
+
+
+#footer{
+
+}
+
