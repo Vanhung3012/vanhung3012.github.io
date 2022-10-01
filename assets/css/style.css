@@ -22,8 +22,13 @@ html {
 #header{
     height: 46.5px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     
 }
+
 #nav, .subnav{
    list-style-type: none;
 }
@@ -70,13 +75,30 @@ html {
     padding: 0 12px;
     line-height: 38.5px;
 }
-
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46.5px;
+}
+   
 #slider{
     /* margin-top: 46.5 px; */
     /* position: relative; */
     padding-top: 50%;
     background: url(/assets/css/img/slider_1.jpg) top center / cover no-repeat;
-    
+    margin-top: 46.5px;
+
 }
 
 #slider .text-content{
